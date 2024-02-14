@@ -1,0 +1,208 @@
+/* Estilos generales */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+ .header {
+    position: relative;
+  }
+  
+  .header img {
+    width: 100%;
+    object-fit: fill;
+    height: auto;
+    max-height: 72vh;
+  }
+  
+  .header-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .header-left,
+  .header-right {
+    display: flex;
+  }
+  
+  .header-bottom {
+    text-align: -webkit-left;
+    padding: 20px;
+  }
+  
+  .header-bottom h1 {
+    font-size: 9em;
+    margin-top: 2px
+}
+.header-bottom p {
+  margin-top: -94px;
+  color: white;
+}
+
+.header-bottom button {
+  background-color: aquamarine;
+  border: none; 
+    padding: 15px 20px; 
+    font-size: 1.2em;
+}
+  
+  /* Resto del contenido */
+  
+  .main-content {
+    padding: 20px;
+  }
+  
+  .section1,
+  .section2,
+  .section3 {
+    margin-bottom: 30px;
+    text-align: center;
+
+  }
+  
+
+  .section1 p {
+  max-width: 570px;
+  margin: 10px auto;
+}
+
+.section2 h2, p{
+  color: black;
+}
+
+
+.section2 button{
+  background-color: #ffbf69;
+border: none;
+padding: 15px 20px;
+font-size: 1.2em;
+margin: 0px 73px 0px 98px
+}
+
+
+  .blue-background {
+    background-color: aqua;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .split-background {
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('/images/bg-grid.png'); 
+  background-size: cover;
+  color: black;
+  padding: 20px;
+  }
+  
+  .split-left,
+  .split-right {
+    width: 48%;
+  }
+
+ 
+  
+  /* Agrega más estilos según sea necesario */
+  
+ 
+
+  #myCarousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide {
+    flex: 0 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Establece un tamaño máximo para las imágenes */
+.swiper-slide img {
+    max-width: 42%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.blue-background {
+    padding: 20px;
+    text-align: center;
+    margin: -19px 20px 4px -21px;
+    width: 100%;
+}
+
+/* Estilos específicos para dispositivos móviles */
+@media (max-width: 767px) {
+  .header-top {
+      flex-direction: column; 
+      align-items: center; 
+  }
+
+  .header-bottom {
+      padding: 10px; 
+      text-align: center; 
+  }
+
+
+  .section2 h2, p{
+    color: black;
+    margin: initial;
+
+  }
+  .header-bottom h1 {
+    text-align: -webkit-left;
+    font-size: 2em;
+  }
+  .header-bottom p {
+    margin-top: -19px;
+    text-align: -webkit-left;
+  }
+
+  .header-bottom button {
+      margin-top: 10px;
+  }
+
+  .section1 p {
+      max-width: 100%; 
+      margin: 10px 0; 
+  }
+
+  .swiper-slide img {
+      max-width: 100%; 
+  }
+
+  .section2 button {
+      margin: 10px 0; 
+  }
+
+  .blue-background {
+      padding: 21px; 
+      margin: 0px 0px 0px -19px
+  }
+
+  .split-background {
+      flex-direction: column; 
+  }
+
+  .split-left,
+  .split-right {
+      width: 100%; 
+  }
+}
